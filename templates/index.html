@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emotion Detector</title>
+    <script defer src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+</head>
+<body>
+    <main>
+        <h1>Emotion Detector</h1>
+        <form id="emotion-form">
+            <label for="textToAnalyze">Enter a sentence</label>
+            <input id="textToAnalyze" name="textToAnalyze" type="text" size="45">
+            <button type="submit">Analyze</button>
+        </form>
+        <p id="result" role="status"></p>
+    </main>
+</body>
+</html>
